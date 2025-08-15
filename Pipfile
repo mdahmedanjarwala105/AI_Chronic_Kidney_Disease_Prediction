@@ -8,9 +8,10 @@ numpy = "*"
 pandas = "*"
 scikit-learn = "*"
 matplotlib = "*"
-tensorflow = "*"
 notebook = "*"
 ipykernel = "*"
+tensorflow = "*"
+protobuf = "*"
 
 [dev-packages]
 

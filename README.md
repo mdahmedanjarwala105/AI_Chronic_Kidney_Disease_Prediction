@@ -28,32 +28,25 @@ The goal is to classify whether a patient has CKD (`1`) or Not CKD (`0`) based o
 - Features scaled to [0,1] using **MinMaxScaler**.  
 
 Formula:
-\[
-X' = \frac{X - X_{\min}}{X_{\max} - X_{\min}}
-\]
+X' = (X - X_min) / (X_max - X_min)
 
 ---
 
 ## 🧠 Model Architecture
 - **Input Layer:** neurons = number of features (8).  
 - **Hidden Layer:** Dense(256, activation=ReLU, kernel_initializer="he_normal")  
-  - ReLU formula:  
-  \[
-  f(z) = \max(0, z)
-  \]  
+  - ReLU formula:
+  f(z) = max(0, z)
+
 - **Output Layer:** Dense(1, activation=Sigmoid)  
   - Sigmoid formula:  
-  \[
-  \sigma(z) = \frac{1}{1 + e^{-z}}
-  \]  
+  σ(z) = 1 / (1 + e^(-z))
 
 ---
 
 ## ⚙️ Training
 - **Loss Function:** Binary Crossentropy  
-  \[
-  \text{Loss} = - \big( y \cdot \log(p) + (1-y) \cdot \log(1-p) \big)
-  \]  
+  Loss = - [ y * log(p) + (1 - y) * log(1 - p) ]
 - **Optimizer:** Adam  
 - **Metric:** Accuracy  
 - **Callback:** EarlyStopping(patience=10, restore_best_weights=True)  

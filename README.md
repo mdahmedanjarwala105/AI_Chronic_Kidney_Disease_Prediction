@@ -101,8 +101,6 @@ X' = \frac{X - X_{\min}}{X_{\max} - X_{\min}}
 
 ## 📉 Training Graphs
 - Accuracy vs Epochs (Train vs Validation)  
-- Loss vs Epochs (Train vs Validation)  
-
-(*You can add screenshots here if available*)  
-
+- Loss vs Epochs (Train vs Validation)
+  
 ---

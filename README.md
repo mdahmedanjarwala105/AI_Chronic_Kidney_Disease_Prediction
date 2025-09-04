@@ -62,33 +62,21 @@ X' = \frac{X - X_{\min}}{X_{\max} - X_{\min}}
 
 ## 📈 Evaluation Metrics
 - **Accuracy**  
-  \[
-  \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
-  \]  
+  Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 - **Precision**  
-  \[
-  \text{Precision} = \frac{TP}{TP + FP}
-  \]  
+  Precision = TP / (TP + FP)
 
 - **Recall (Sensitivity)**  
-  \[
-  \text{Recall} = \frac{TP}{TP + FN}
-  \]  
+  Recall = TP / (TP + FN)
 
 - **F1-score**  
-  \[
-  F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
-  \]  
+  F1 = 2 * (Precision * Recall) / (Precision + Recall)
 
 - **Confusion Matrix**  
-  \[
-  \begin{bmatrix}
-  TN & FP \\
-  FN & TP
-  \end{bmatrix}
-  \]  
-
+     [[ TN  FP ]  
+      [ FN  TP ]]
+  
 ---
 
 ## 📊 Results
